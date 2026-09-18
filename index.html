@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UltimatePlayz | Minecraft Java SMP</title>
+    <meta name="description"
+        content="UltimatePlayz Minecraft Java SMP Server. Join our community, explore ranks, events, economy and survival gameplay.">
+    <meta name="theme-color" content="#050609">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="#home" class="brand">
+                <img src="logo.jpeg" alt="UltimatePlayz">
+            </a>
+
+            <button class="menu-toggle" id="mobile-menu" type="button" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#ranks">Ranks</a></li>
+                <li><a href="#rules">Rules</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="discord-nav">Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="stars stars-one"></div>
+                <div class="stars stars-two"></div>
+                <div class="stars stars-three"></div>
+                <div class="stars stars-four"></div>
+                <div class="moon"></div>
+                <div class="mountain mountain-one"></div>
+                <div class="mountain mountain-two"></div>
+                <div class="bubbles" id="bubbles"></div>
+                <div class="hero-dark"></div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-logo-wrap fade-in">
+                    <img src="logo.jpeg" class="hero-logo" alt="UltimatePlayz Logo">
+                </div>
+
+                <div class="server-status fade-in">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="server-status-text">Checking Server...</span>
+                    <span class="status-divider"></span>
+                    <span id="player-count">Loading...</span>
+                </div>
+
+                <div class="server-tags fade-in">
+                    <span>☕ Java Edition</span>
+                    <span>🔓 Cracked</span>
+                    <span>⚡ Old & New Versions</span>
+                    <span>↩ Backward Compatible</span>
+                </div>
+
+                <h1 class="fade-in">
+                    Welcome to
+                    <span>UltimateSMP</span>
+                </h1>
+
+                <p class="hero-description fade-in">
+                    Experience an epic Minecraft survival adventure with custom economy,
+                    PvP, quests, events, land protection and an amazing community.
+                </p>
+
+                <div class="server-ip-box fade-in" onclick="copyIP()" role="button" tabindex="0">
+                    <div>
+                        <small>SERVER IP</small>
+                        <strong>play.ultimateplayz.fun</strong>
+                    </div>
+                    <button type="button">COPY IP</button>
+                </div>
+
+                <div class="hero-buttons fade-in">
+                    <a href="#ranks" class="primary-btn">View Ranks</a>
+                    <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="secondary-btn">Join Discord</a>
+                </div>
+
+                <div class="scroll-down fade-in">
+                    <span></span>
+                    Scroll to explore
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" id="features">
+            <div class="section-heading fade-in">
+                <span>WHY PLAY HERE?</span>
+                <h2>Server Features</h2>
+                <p>Everything you need for an exciting SMP experience.</p>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">💰</div>
+                    <h3>Custom Economy</h3>
+                    <p>Trade items, create shops, sell resources and build your own economy empire.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">🛡️</div>
+                    <h3>Land Protection</h3>
+                    <p>Protect your builds and territory with an easy-to-use land claiming system.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smooth Performance</h3>
+                    <p>Optimized server performance for a smooth and enjoyable Minecraft experience.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Quests & Rewards</h3>
+                    <p>Complete challenges, participate in activities and earn exciting rewards.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">⚔️</div>
+                    <h3>PvP Arenas</h3>
+                    <p>Fight other players in dedicated PvP areas and prove your combat skills.</p>
+                </article>
+
+                <article class="feature-card fade-in">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Weekly Events</h3>
+                    <p>Join tournaments, parkour events and community activities every week.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="ranks-section" id="ranks">
+            <div class="section-heading fade-in">
+                <span>PREMIUM RANKS</span>
+                <h2>Choose Your Rank</h2>
+                <p>One-time purchase. Your rank stays active for the lifetime of the server.</p>
+            </div>
+
+            <div class="rank-grid">
+                <article class="rank-card vip fade-in">
+                    <div class="rank-glow"></div>
+                    <div class="rank-icon">✦</div>
+                    <div class="rank-name">VIP</div>
+                    <div class="rank-price"><small>₹</small>99</div>
+                    <div class="rank-type">ONE-TIME PURCHASE</div>
+                    <ul>
+                        <li>✓ VIP Rank Prefix</li>
+                        <li>✓ Exclusive Commands</li>
+                        <li>✓ Special Cosmetics</li>
+                        <li>✓ Priority Features</li>
+                    </ul>
+                    <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="rank-btn">Purchase on Discord</a>
+                </article>
+
+                <article class="rank-card mvp fade-in">
+                    <div class="rank-glow"></div>
+                    <div class="rank-icon">◆</div>
+                    <div class="rank-name">MVP</div>
+                    <div class="rank-price"><small>₹</small>129</div>
+                    <div class="rank-type">ONE-TIME PURCHASE</div>
+                    <ul>
+                        <li>✓ Everything in VIP</li>
+                        <li>✓ MVP Rank Prefix</li>
+                        <li>✓ More Exclusive Commands</li>
+                        <li>✓ Special Cosmetics</li>
+                    </ul>
+                    <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="rank-btn">Purchase on Discord</a>
+                </article>
+
+                <article class="rank-card legend fade-in">
+                    <div class="rank-glow"></div>
+                    <div class="rank-icon">♛</div>
+                    <div class="rank-name">LEGEND</div>
+                    <div class="rank-price"><small>₹</small>169</div>
+                    <div class="rank-type">ONE-TIME PURCHASE</div>
+                    <ul>
+                        <li>✓ Everything in MVP</li>
+                        <li>✓ LEGEND Rank Prefix</li>
+                        <li>✓ Premium Commands</li>
+                        <li>✓ Exclusive Cosmetics</li>
+                    </ul>
+                    <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="rank-btn">Purchase on Discord</a>
+                </article>
+
+                <article class="rank-card titan fade-in">
+                    <div class="rank-glow"></div>
+                    <div class="rank-icon">♜</div>
+                    <div class="rank-name">TITAN</div>
+                    <div class="rank-price"><small>₹</small>239</div>
+                    <div class="rank-type">ONE-TIME PURCHASE</div>
+                    <ul>
+                        <li>✓ Everything in LEGEND</li>
+                        <li>✓ TITAN Rank Prefix</li>
+                        <li>✓ Premium Features</li>
+                        <li>✓ Exclusive Perks</li>
+                    </ul>
+                    <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="rank-btn">Purchase on Discord</a>
+                </article>
+
+                <article class="rank-card ultimate fade-in">
+                    <div class="rank-glow"></div>
+                    <div class="rank-icon">♚</div>
+                    <div class="rank-name">ULTIMATE</div>
+                    <div class="rank-price"><small>₹</small>269</div>
+                    <div class="rank-type">ONE-TIME PURCHASE</div>
+                    <ul>
+                        <li>✓ Everything in TITAN</li>
+                        <li>✓ ULTIMATE Rank Prefix</li>
+                        <li>✓ Maximum Premium Perks</li>
+                        <li>✓ Exclusive Ultimate Features</li>
+                    </ul>
+                    <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener"
+                        class="rank-btn">Purchase on Discord</a>
+                </article>
+            </div>
+
+            <div class="rank-note fade-in">
+                <strong>⚡ One-Time Rank</strong>
+                <span>One-time payment • No monthly subscription • Rank remains active until the server ends </span>
+            </div>
+        </section>
+
+        <section class="highlights-section">
+            <div class="section-heading fade-in">
+                <span>EXPLORE ULTIMATE SMP</span>
+                <h2>Server Highlights</h2>
+            </div>
+
+            <div class="highlight-grid">
+                <article class="highlight-card fade-in">
+                    <div>⚔️</div>
+                    <h3>Epic PvP</h3>
+                    <p>Challenge players and prove who is the strongest.</p>
+                </article>
+
+                <article class="highlight-card fade-in">
+                    <div>🏆</div>
+                    <h3>Community Events</h3>
+                    <p>Take part in tournaments and special server events.</p>
+                </article>
+
+                <article class="highlight-card fade-in">
+                    <div>🛒</div>
+                    <h3>Player Market</h3>
+                    <p>Build shops and trade directly with other players.</p>
+                </article>
+
+                <article class="highlight-card fade-in">
+                    <div>🌎</div>
+                    <h3>Survival World</h3>
+                    <p>Build, explore, survive and create your own story.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="rules-section" id="rules">
+            <div class="section-heading fade-in">
+                <span>PLAY FAIR</span>
+                <h2>Server Rules</h2>
+            </div>
+
+            <div class="rules-list fade-in">
+                <div class="rule-item">
+                    <span>01</span>
+                    <div>
+                        <strong>No Hacking or Cheating</strong>
+                        <p>X-ray, fly hacks and unfair modifications are prohibited.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <span>02</span>
+                    <div>
+                        <strong>Respect Players</strong>
+                        <p>No harassment, hate speech or toxic behavior.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <span>03</span>
+                    <div>
+                        <strong>No Griefing</strong>
+                        <p>Respect player claims, builds and base boundaries.</p>
+                    </div>
+                </div>
+
+                <div class="rule-item">
+                    <span>04</span>
+                    <div>
+                        <strong>Fair Trading</strong>
+                        <p>Scamming in real-money or in-game trades is prohibited.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="section-heading fade-in">
+                <span>NEED HELP?</span>
+                <h2>Frequently Asked Questions</h2>
+            </div>
+
+            <div class="faq-container fade-in">
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>How do I join UltimateSMP?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Open Minecraft Java Edition, add <strong>play.ultimateplayz.fun</strong> to your multiplayer
+                        server list and join.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Which Minecraft versions are supported?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        UltimateSMP supports the old and new versions configured by the server, with backward
+                        compatibility.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>Is the server Java Edition?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Yes. UltimateSMP is a Minecraft Java Edition server.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" type="button">
+                        <span>How can I purchase a rank?</span>
+                        <span>+</span>
+                    </button>
+                    <div class="faq-answer">
+                        Click any Purchase on Discord button and contact the server staff through Discord for the rank
+                        purchase process.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="discord-section" id="discord">
+            <div class="discord-box fade-in">
+                <img src="logo.jpeg" alt="UltimatePlayz" class="discord-logo">
+                <span>JOIN THE COMMUNITY</span>
+                <h2>UltimatePlayz Discord</h2>
+                <p>Get server updates, events, giveaways, support and rank purchase information.</p>
+                <a href="https://discord.com/invite/aaAmawRzdQ" target="_blank" rel="noopener">Join Discord →</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="logo.jpeg" alt="UltimatePlayz">
+        </div>
+        <p>© 2026 UltimatePlayz. Not affiliated with Mojang Studios.</p>
+        <span>play.ultimateplayz.fun</span>
+    </footer>
+
+    <div id="toast">IP Copied!</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
